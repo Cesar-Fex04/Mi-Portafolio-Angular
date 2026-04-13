@@ -1,59 +1,72 @@
-# MiPortafolioAngular
+Aquí tienes el archivo `README.md` listo para descargar. He integrado tu información personal como estudiante de la Universidad de Sonora y tu interés en el desarrollo full-stack para que el repositorio se vea más profesional y completo.
 
-Este proyecto se generó con [Angular CLI](https://github.com/angular/angular-cli) versión 21.2.7.
+Su archivo README.md está listo
+[file-tag: readme-portafolio-angular]
 
-## Servidor de desarrollo
-
-Para iniciar un servidor de desarrollo local, ejecute:
-
-```bash
-ng serve
 ```
+readme_content = """# Mi Portafolio Personal - Angular
 
-Una vez que el servidor esté en funcionamiento, abra su navegador y acceda a `http://localhost:4200/`. La aplicación se recargará automáticamente cada vez que modifique alguno de los archivos fuente.
+¡Bienvenido! Este es mi primer proyecto desarrollado utilizando el framework **Angular**. Soy **Julio Cesar Lopez Felix**, estudiante de 8vo semestre de Ingeniería en Sistemas en la **Universidad de Sonora (Unison)**, y este espacio está dedicado a documentar mi aprendizaje y evolución en el desarrollo frontend.
 
-## Generación de código
+Como entusiasta del desarrollo Full-Stack y la computación en la nube, decidí utilizar este proyecto para aplicar conceptos de componentes, rutas y despliegue continuo.
 
-Angular CLI incluye potentes herramientas para la generación de código. Para generar un nuevo componente, ejecuta:
+🌍 **Sitio en vivo:** [Visita mi portafolio aquí](https://cesar-fex04.github.io/Mi-Portafolio-Angular/)
 
-```bash
-ng generate component nombre-del-componente
+---
+
+## 🚀 Cómo ejecutar este proyecto localmente
+
+Si deseas clonar este repositorio y correr el proyecto en tu propia máquina para explorar el código, sigue estos pasos:
+
+### 📋 Requisitos previos
+Asegúrate de tener instalados los siguientes entornos:
+* [Node.js](https://nodejs.org/) (versión LTS recomendada).
+* [Angular CLI](https://angular.io/cli): Puedes instalarlo globalmente ejecutando:
+  ```bash
+  npm install -g @angular/cli
+  ```
+
+### 🛠️ Pasos para la instalación
+
+1. **Clona el repositorio**
+   ```bash
+   git clone [https://github.com/Cesar-Fex04/Mi-Portafolio-Angular.git](https://github.com/Cesar-Fex04/Mi-Portafolio-Angular.git)
+   ```
+
+2. **Accede al directorio del proyecto**
+   ```bash
+   cd Mi-Portafolio-Angular
+   ```
+
+3. **Instala las dependencias**
+   Utiliza npm para descargar todos los módulos necesarios:
+   ```bash
+   npm install
+   ```
+
+4. **Inicia el servidor de desarrollo local**
+   ```bash
+   ng serve
+   ```
+
+5. **Visualiza la aplicación**
+   Una vez que la terminal indique que la compilación fue exitosa, abre tu navegador en:
+   `http://localhost:4200/`
+
+---
+
+## 🏗️ Estructura y Comandos Útiles
+
+Este proyecto fue generado con Angular CLI versión 21.2.7. Aquí algunos comandos que utilizo frecuentemente:
+
+* **Generar componentes:** `ng generate component nombre-del-componente`
+* **Compilación para producción:** `ng build` (Genera la carpeta `dist/` con los archivos optimizados).
+* **Despliegue en GitHub Pages:** `ng deploy --base-href=/Mi-Portafolio-Angular/`
+
+---
+*Desarrollado por Julio Cesar Lopez Felix*
+"""
+
+with open("README.md", "w", encoding="utf-8") as f:
+    f.write(readme_content)
 ```
-
-Para obtener una lista completa de los esquemas disponibles (como `componentes`, `directivas` o `pipes`), ejecuta:
-
-```bash
-ng generate --help
-```
-
-## Compilación
-
-Para compilar el proyecto, ejecuta:
-
-```bash
-ng build
-```
-
-Esto compilará tu proyecto y guardará los archivos de compilación en el directorio `dist/`. Por defecto, la compilación de producción optimiza tu aplicación para mejorar el rendimiento y la velocidad.
-
-## Ejecución de pruebas unitarias
-
-Para ejecutar pruebas unitarias con el ejecutor de pruebas [Vitest](https://vitest.dev/), utilice el siguiente comando:
-
-```bash
-ng test
-```
-
-## Ejecución de pruebas de extremo a extremo
-
-Para realizar pruebas de extremo a extremo (e2e), ejecute:
-
-```bash
-ng e2e
-```
-
-Angular CLI no incluye un framework de pruebas de extremo a extremo por defecto. Puede elegir uno que se ajuste a sus necesidades.
-
-## Recursos adicionales
-
-Para obtener más información sobre el uso de Angular CLI, incluyendo referencias detalladas de comandos, visite la página [Información general y referencia de comandos de Angular CLI](https://angular.dev/tools/cli).
