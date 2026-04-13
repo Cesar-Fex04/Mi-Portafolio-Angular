@@ -1,0 +1,40 @@
+# Build output
+/dist
+/tmp
+/out-tsc
+/bazel-out
+
+# Node dependencies
+/node_modules
+npm-debug.log
+yarn-error.log
+
+# IDEs and editors
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+.vscode/
+.history/
+
+# Angular cache
+/.angular/cache
+
+# Coverage and test
+/coverage
+testem.log
+/libpeerconnection.log
+/__screenshots__/
+
+# Sass cache
+.sass-cache/
+
+# Typings
+/typings
+
+# System files
+.DS_Store
+Thumbs.db
