@@ -1,11 +1,3 @@
-Aquí tienes el archivo `README.md` listo para descargar. He integrado tu información personal como estudiante de la Universidad de Sonora y tu interés en el desarrollo full-stack para que el repositorio se vea más profesional y completo.
-
-Su archivo README.md está listo
-[file-tag: readme-portafolio-angular]
-
-```
-readme_content = """# Mi Portafolio Personal - Angular
-
 ¡Bienvenido! Este es mi primer proyecto desarrollado utilizando el framework **Angular**. Soy **Julio Cesar Lopez Felix**, estudiante de 8vo semestre de Ingeniería en Sistemas en la **Universidad de Sonora (Unison)**, y este espacio está dedicado a documentar mi aprendizaje y evolución en el desarrollo frontend.
 
 Como entusiasta del desarrollo Full-Stack y la computación en la nube, decidí utilizar este proyecto para aplicar conceptos de componentes, rutas y despliegue continuo.
