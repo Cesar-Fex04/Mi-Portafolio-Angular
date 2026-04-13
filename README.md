@@ -57,8 +57,3 @@ Este proyecto fue generado con Angular CLI versión 21.2.7. Aquí algunos comand
 
 ---
 *Desarrollado por Julio Cesar Lopez Felix*
-"""
-
-with open("README.md", "w", encoding="utf-8") as f:
-    f.write(readme_content)
-```
