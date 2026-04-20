@@ -1,21 +1,36 @@
-<p>home works!</p>
-<main>
-        <section class="profile">
-            <div class="profile-image">
-                <img src="cv_imagen.jpg" alt="Julio Cesar Lopez Felix">
-            </div>
-            <div class="profile-text">
-                <h2>Hola</h2>
-               
-                    <p class="about-me"><b>Un poco de mí</b> <br><br></p>
-                    <p class="about-me2">
-                        Soy Julio Cesar Lopez, estudiante de ingeniería en sistemas de información en la Universidad de Sonora y me encuentro aquí para ofrecer mis servicios como desarrollador de software, poniendo en práctica cada uno de mis conocimientos adquiridos a lo largo de la carrera y mis habilidades que me permiten desenvolverme como persona y conectar con los demás.
-                </p>
-                <br><br><br>
-                <div class="buttons">
-                    <a href="curriculum.html" class="btn-cv">Curriculum</a>
-                    <a href="proyectos.html" class="btn-contact">Proyectos</a>
-                </div>
-            </div>
-        </section>
-    </main>
+<div class="page home-page">
+
+  <section class="profile">
+    
+    <div class="profile-content">
+      
+      <div class="avatar-contenedor">
+        <img src="cv_imagen.jpg" alt="Foto de {{ nombre }}" class="avatar-imagen">
+      </div>
+
+      <div class="profile-text">
+        <p class="saludo">Hola 👋</p>
+        <h1>{{ nombre }}</h1>
+        <p class="about-me-label"><b>Un poco de mí</b></p>
+        <p class="about-me">
+          Soy estudiante de ingeniería en sistemas de información en la
+          <strong>Universidad de Sonora</strong> y me encuentro aquí para ofrecer
+          mis servicios como desarrollador de software, poniendo en práctica cada
+          uno de mis conocimientos adquiridos a lo largo de la carrera y mis
+          habilidades que me permiten desenvolverme como persona y conectar con los demás.
+        </p>
+      </div>
+    </div>
+
+    <div class="tarjeta-container">
+      <app-tarjeta
+        [nombre]="nombre"
+        [edad]="edad"
+        carrera="Ingeniería en Sistemas de Información"
+        universidad="Universidad de Sonora">
+      </app-tarjeta>
+    </div>
+
+  </section>
+
+</div>

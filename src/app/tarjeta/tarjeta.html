@@ -1,0 +1,70 @@
+<!-- Tarjeta de presentación personalizable -->
+<!-- {{ }} = Interpolación: muestra el valor de las propiedades del componente -->
+
+<div class="tarjeta-wrapper">
+
+  <!-- Cabecera de la tarjeta -->
+<div class="tarjeta-header">
+    <div class="tarjeta-titulo">
+      <h2>{{ nombre }}</h2>
+      <p class="subtitulo">{{ carrera }}</p>
+      <p class="universidad">🏛️ {{ universidad }}</p>
+    </div>
+  </div>
+
+  <!-- Cuerpo de la tarjeta -->
+  <div class="tarjeta-body">
+
+    <!-- Property binding [class] — asigna clases dinámicamente -->
+    <div class="dato-fila">
+      <span class="dato-label">Edad</span>
+      <!-- Interpolación -->
+      <span class="dato-valor">{{ edad }} años</span>
+    </div>
+
+    <div class="dato-fila">
+      <span class="dato-label">Semestre</span>
+      <span class="dato-valor">8° semestre</span>
+    </div>
+
+    <!-- Lista de habilidades con *ngFor -->
+    <div class="habilidades-seccion">
+      <p class="dato-label">Habilidades</p>
+      <div class="habilidades-lista">
+        <!-- *ngFor itera sobre el array habilidades[] del componente -->
+        <span class="habilidad-tag" *ngFor="let habilidad of habilidades">
+          {{ habilidad }}
+        </span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer de la tarjeta con el contador de likes -->
+  <div class="tarjeta-footer">
+
+    <!-- Contador con interpolación {{ likes }} -->
+    <div class="likes-contador">
+      <span class="likes-numero">{{ likes }}</span>
+      <span class="likes-texto">likes</span>
+    </div>
+
+    <!-- Event binding (click) — requisito del maestro -->
+    <!-- Al hacer click, se ejecuta el método darLike() del componente -->
+    <button class="btn-like" (click)="darLike()">
+      ❤️ Me gusta
+    </button>
+
+    <!-- *ngIf muestra este botón solo si hay likes -->
+    <button class="btn-reset" (click)="resetearLikes()" *ngIf="likes > 0">
+      Resetear
+    </button>
+
+  </div>
+
+  <!-- Mensaje de feedback — *ngIf lo muestra/oculta según mostrarMensaje -->
+  <div class="mensaje-like" *ngIf="mostrarMensaje">
+    {{ mensajeLike }}
+  </div>
+
+</div>
